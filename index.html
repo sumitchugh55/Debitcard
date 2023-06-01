@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+          
+        }
+        .cardfront{
+            width: 400px;
+            height: 220px;
+            top: 50px;
+            left: 100px;
+            position: absolute;
+            background-image: conic-gradient(blue, purple, cyan,blue,Tomato);
+            border-radius: 20px;
+            color: white;
+        }
+        .cardback{
+             width: 400px;
+            height: 220px;
+            top: 300px;
+            left: 150px;
+            position: absolute;
+            background-color: rgba(194, 171, 171, 1);
+            border-radius: 20px;
+            
+        }
+        /*cards Styling */
+        .cards{
+            display: flex;
+            height: 700px;
+            justify-content: center;
+            align-items: center;
+        }
+        #card-1{
+            flex-basis: 40%;
+            background-image: radial-gradient(rgb(89, 7, 89), blue, rgba(234, 162, 174, 0.943));
+            height: 750px;
+        }
+        #card-2{
+            flex-basis: 60%;
+            margin-left: 360px;
+
+        }
+        button{
+            background-color: #301934;
+            color: white;
+            width: 325px;
+            height: 40px;
+            border-radius: 7px;
+        }
+        input[type=text]{
+            border-radius: 7px;
+            height: 30px;
+            width: 306px;
+        }
+        input[type=number]{
+            border-radius: 5px;
+            height: 30px;
+            width: 40px;
+        }
+        input[required]{
+            width: 200px;
+        }
+        #g{
+            background-color: black;
+            height: 50px;
+        }
+        #grey{
+            background-color: grey;
+            width: 330px;
+            height: 30px;
+            border-radius: 5px;
+        }
+        #text{
+            width: 130px;
+            font-size: 8px;
+            color: grey;
+        }
+       .cardfront  p{
+            font-size: 30px;
+            margin-top: 115px;
+        }
+       .chip
+       {
+        position:absolute;
+        top: 80px;
+        left: 120px;
+       }
+       .chip img{
+        width: 55px;
+        height: 47px;
+       }
+       form{
+        font-size: 15px;
+        font-variant: small-caps;
+        
+       }
+    </style>
+</head>
+<body>
+    <!-- Both the card -->
+
+    <div class="cardfront">
+        <center>
+        <p>
+            9591 6489 6389 101E
+                     
+
+        </p>
+    </center>
+        <span>
+            Sumit Chugh &nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            09/36
+        </span>
+            
+            
+            
+            
+            
+               
+
+
+
+        
+    </div>
+    <div class="cardback">
+        <p id ="g">&nbsp;&nbsp;</p>
+        <center>
+            <p id="grey">&nbsp;</p>
+        </center>
+        <center>
+        <p id="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam accusamus ex tempora v</p>
+    </center>
+    </div>
+    <!-- Screen Divider -->
+    <div class="cards">
+        <div class="card" id="card-1"></div>
+        <div class="card" id="card-2">
+            <form action="">
+            <label for="">CARDHOLDER NAME</label><br>
+            <input type="text">
+            <br><br>
+            <label for="">CARDNumber</label><br>
+            <input type="text">
+            <br><br>
+            <label for="">EXP.DATE(MM/YY)</label>&nbsp;&nbsp;
+            <label for="">CVV</label><br>
+            <input type="number" placeholder="MM "> &nbsp;
+            <input type="number" placeholder="YY"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           
+           <input type="number" placeholder="e.g 123" required>
+           <br><br>
+            <button type="submit">Confirm</button>
+        </form>
+        </div>
+    </div>
+    <div class="chip">
+        <img src="./Chip Image.png" alt="">
+    </div>
+</body>
+</html>
